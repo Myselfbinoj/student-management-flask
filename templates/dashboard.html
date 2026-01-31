@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dashboard</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="container">
+<h2>Student Dashboard</h2>
+<a href="/add" class="btn">Add Student</a>
+<a href="/logout" class="btn logout">Logout</a>
+<table>
+<tr>
+<th>Name</th><th>Email</th><th>Course</th><th>Action</th>
+</tr>
+{% for student in students %}
+<tr>
+<td>{{ student.name }}</td>
+<td>{{ student.email }}</td>
+<td>{{ student.course }}</td>
+<td><a href="/delete/{{ student.id }}" class="delete">Delete</a></td>
+</tr>
+{% endfor %}
+</table>
+</div>
+</body>
+</html>

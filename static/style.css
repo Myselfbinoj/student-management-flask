@@ -1,0 +1,9 @@
+body { font-family: Arial; background:#f4f6f8; }
+.container { width:400px; margin:80px auto; background:white; padding:20px; }
+input, button { width:100%; padding:10px; margin:5px 0; }
+button { background:#007bff; color:white; border:none; }
+.btn { background:green; color:white; padding:6px; text-decoration:none; }
+.logout { background:red; }
+table { width:100%; border-collapse:collapse; }
+table, th, td { border:1px solid #ccc; padding:6px; }
+.delete { color:red; }
